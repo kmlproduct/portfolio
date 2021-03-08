@@ -1,10 +1,7 @@
 *{
     box-sizing: border-box;
 }
-body {
-    background: #E5E5E5;
 
-}
 .header {
 position: relative;
 padding-top: 40px;
@@ -14,14 +11,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .header .nav-bar {
     margin: auto 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow:wrap;
 }
 .header .nav-bar ul {
     list-style: none;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .header .nav-bar ul li {
 color: white;
@@ -41,7 +38,7 @@ line-height: 18px;
     color: white;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .personal-info .info-text {
     margin: 30px 0;
@@ -77,19 +74,20 @@ background-color: #2559CD ;
 }
 .container {
     text-align: center;
-    margin: 100px 0;
+    
 }
 .skills {
-    text-align: center;
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow:row wrap;
+    align-content: space-between;
+    justify-content: space-around;
     padding: 50px 100px;
     margin: 30px 0;
 }
 .skills .skills-title{
     width: 200px;
-    margin: 30px 0;
+    margin: 30px;
 }
 .skills .skills-title h2 {
     font-family: Roboto;
@@ -110,9 +108,16 @@ color: #444444;
     text-align: center;
     color: #555555;
 }
-.container .knowledge {
+.containe{
+    padding: 50px 0;
+    margin: 0 0 100px 0;
+}
+.containe h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.containe .knowledge {
     display: flex;
-    justify-content: space-between;
     justify-content: space-around;
     flex-flow: wrap;
     text-align: center;
@@ -120,8 +125,49 @@ color: #444444;
 .language{
     position: relative;
     width: 150px;
+    margin: 10px;
 }
 .language p img{
     
 float: left;
+}
+.latest h2 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.latest .projects {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    
+}
+.latest .projects img {
+    width: 370px;
+    margin: 10px;
+}
+.slider-clients{
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+.slider-clients .arrow-left {
+    position: absolute;
+    left: 40px;
+    top: 157px;
+}
+.slider-clients .arrow-right{
+    position: absolute;
+    right: 60px;
+    top: 160px;
+}
+.clients {
+    justify-content: space-around;
+    display: flex;
+    margin: 20px 30px;
+    flex-flow: row wrap;
+    
+}
+.clients div {
+    width: 347px;
 }
