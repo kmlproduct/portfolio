@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: #E5E5E5;
+
+}
+.header {
+position: relative;
+padding-top: 40px;
+background: linear-gradient(116.47deg, #2559CD 9%, #1D4DC9 41%, #0F38C1 80%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .nav-bar {
+    margin: auto 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:wrap;
+}
+.header .nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.header .nav-bar ul li {
+color: white;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+line-height: 18px;
+}
+.header .nav-bar ul li:not(:last-child){
+    margin-right: 20px;
+}
+.personal-info {
+
+    margin-top: 100px;
+    padding: 0px 20px;
+    padding-left: 100px;
+    color: white;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.personal-info .info-text {
+    margin: 30px 0;
+}
+.personal-info .btn1 {
+color: white;
+height: 44px;
+margin: 30px 10px 30px 0;
+font-weight: bold;
+font-size: 20px;
+width: 120px;
+border-radius: 8px;
+border: 2px solid #e8e9ee;
+background-color: yellowgreen;
+}
+.personal-info .btn2 {
+color: white;
+font-weight: bold;
+font-size: 20px;
+height: 44px;
+width: 120px;
+border-radius: 8px;
+border: 2px solid #e8e9ee;
+background-color: #2559CD ;
+}
+.personal-info img {
+    margin-right: 150px;
+}
+.img-clouds{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.container {
+    text-align: center;
+    margin: 100px 0;
+}
+.skills {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 100px;
+    margin: 30px 0;
+}
+.skills .skills-title{
+    width: 200px;
+    margin: 30px 0;
+}
+.skills .skills-title h2 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #444444;
+}
+.skills .skills-title p{
+    height: 51px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #555555;
+}
+.container .knowledge {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-flow: wrap;
+    text-align: center;
+}
+.language{
+    position: relative;
+    width: 150px;
+}
+.language p img{
+    
+float: left;
+}
