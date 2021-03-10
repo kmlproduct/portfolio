@@ -170,3 +170,94 @@ float: left;
 .clients div {
     width: 347px;
 }
+.footer {
+    background: linear-gradient(116.47deg, #2559CD 9%, #1D4DC9 41%, #0F38C1 80%);
+    text-align: center;
+    padding: 60px 0;
+}
+.footer h2 {
+    color: white;
+    font-weight: bold;
+}
+.footer p {
+    color: white;
+    font-weight: bold;
+}
+.footer .inputs {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.footer .inputs .input-1{
+    margin: 20px 0;
+    /* display: flex;
+    flex-flow: column wrap; */
+    width: 100%;
+}
+.footer .inputs .input-2{
+    margin: 20px 0;
+    /* display: flex;
+    flex-flow: column wrap; */
+    width: 100%;
+}
+.footer .inputs  input{
+    margin: 10px 0;
+    height: 40px;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2%;
+}
+.last-input {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+.footer .input-help{
+    
+    margin: 20px;
+    height: 40px;
+    width: 82%;
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2%;
+    
+}
+.all-inputs {
+    display: flex;
+    flex-flow: column wrap;
+}
+.all-inputs button {
+    width: 180px;
+    background: linear-gradient(
+99.51deg
+, #FDD662 -14.8%, #FCA330 105.66%);
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    color: white;
+}
+.fonts i {
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+}
+.fonts p {
+    font-weight: normal;
+    font-size: 12px;
+}
