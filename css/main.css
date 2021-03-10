@@ -146,29 +146,63 @@ float: left;
     margin: 10px;
 }
 .slider-clients{
-    text-align: center;
     margin-top: 80px;
-    position: relative;
-}
-.slider-clients .arrow-left {
-    position: absolute;
-    left: 40px;
-    top: 157px;
-}
-.slider-clients .arrow-right{
-    position: absolute;
-    right: 60px;
-    top: 160px;
+    text-align: center;
 }
 .clients {
+    position: relative;
     justify-content: space-around;
     display: flex;
     margin: 20px 30px;
     flex-flow: row wrap;
-    
+}
+.slider-clients .arrow-right{
+    position: absolute;
+    right: -40px;
+    top: 101px;
+}
+.slider-clients .arrow-left {
+    position: absolute;
+    left: -11px;
+    top: 106px;
 }
 .clients div {
-    width: 347px;
+    width: 289px;
+    margin: 10px 0;
+}
+.fonts p {
+    font-weight: normal;
+    font-size: 12px;
+}
+.clients {
+    display: flex;
+}
+.client-1{
+text-align-last: left;
+position: relative;
+}
+.clients .img-client img {
+    border-radius: 50%;
+    width: 50px;
+}
+.client-1 .client-text {
+    text-align: left;
+}
+.client-1 .name {
+    position: absolute;
+    left: 64px;
+    top: 8px;
+}
+.client-1 .name .vector {
+    position: absolute;
+    right: 65px;
+}
+.client-1 .name .vector-2{
+    position: absolute;
+    right: 80px;
+}
+.client-1 .name P { 
+    margin: 0;
 }
 .footer {
     background: linear-gradient(116.47deg, #2559CD 9%, #1D4DC9 41%, #0F38C1 80%);
@@ -244,6 +278,7 @@ float: left;
 99.51deg
 , #FDD662 -14.8%, #FCA330 105.66%);
     border-radius: 8px;
+    margin-left: 18px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -256,8 +291,4 @@ float: left;
     color: white;
     margin: 10px;
     font-size: 30px;
-}
-.fonts p {
-    font-weight: normal;
-    font-size: 12px;
 }
