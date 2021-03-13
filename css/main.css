@@ -21,10 +21,7 @@ background: linear-gradient(116.47deg, #2559CD 9%, #1D4DC9 41%, #0F38C1 80%);
 }
 .header .nav-bar ul li {
 color: white;
-font-family: Roboto;
-font-size: 15px;
-font-style: normal;
-line-height: 18px;
+font: italic bold 20px/2 'Dancing Script' ;
 }
 .header .nav-bar ul li:not(:last-child){
     margin-right: 20px;
@@ -40,7 +37,7 @@ line-height: 18px;
     justify-content: space-around;
 }
 .personal-info .info-text {
-    margin: 30px 0;
+    margin-bottom: 100px;
 }
 .personal-info .btn1 {
 color: white;
@@ -64,7 +61,7 @@ border: 2px solid #e8e9ee;
 background-color: #2559CD ;
 }
 .personal-info img {
-    margin-right: 150px;
+    WIDTH: 100px;
 }
 .img-clouds{
     position: absolute;
@@ -81,15 +78,13 @@ background-color: #2559CD ;
     flex-flow:row wrap;
     align-content: space-between;
     justify-content: space-around;
-    padding: 50px 100px;
-    margin: 30px 0;
 }
 .skills .skills-title{
     width: 200px;
-    margin: 30px;
+    margin: 15px 0;
 }
 .skills .skills-title h2 {
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -99,21 +94,16 @@ color: #444444;
 }
 .skills .skills-title p{
     height: 51px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font: normal normal 14px/16px oblique;
     text-align: center;
     color: #555555;
 }
 .containe{
-    padding: 50px 0;
-    margin: 0 0 100px 0;
+    padding: 10px 0;
 }
 .containe h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
 }
 .containe .knowledge {
     display: flex;
@@ -146,6 +136,7 @@ float: left;
     margin: 10px;
 }
 .slider-clients{
+    position: relative;
     margin-top: 80px;
     text-align: center;
 }
@@ -153,22 +144,21 @@ float: left;
     position: relative;
     justify-content: space-around;
     display: flex;
-    margin: 20px 30px;
     flex-flow: row wrap;
+    padding: 0px 60px 90px 60px;
 }
 .slider-clients .arrow-right{
     position: absolute;
-    right: -40px;
-    top: 101px;
+    right: 34px;
+    top: 156px;
 }
 .slider-clients .arrow-left {
     position: absolute;
-    left: -11px;
-    top: 106px;
+    left: 18px;
+    top: 161px;
 }
 .clients div {
-    width: 289px;
-    margin: 10px 0;
+    width: 240px;
 }
 .fonts p {
     font-weight: normal;
@@ -179,13 +169,28 @@ float: left;
 }
 .client-1{
 text-align-last: left;
+margin: 5px;
+padding: 5px;
 position: relative;
+background: #f1eeee;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+border-radius: 6px;
 }
 .clients .img-client img {
     border-radius: 50%;
     width: 50px;
 }
-.client-1 .client-text {
+/* .client-1 .client-text {
+    text-align: left;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 2;
+} */
+.client-1 .client-text 
+{
+    font: normal oblique 16px/1.5 'Times New Roman', Times, serif;;
     text-align: left;
 }
 .client-1 .name {
@@ -209,6 +214,9 @@ position: relative;
     text-align: center;
     padding: 60px 0;
 }
+.footer .container-footer {
+    padding: 0 80px;
+}
 .footer h2 {
     color: white;
     font-weight: bold;
@@ -217,30 +225,30 @@ position: relative;
     color: white;
     font-weight: bold;
 }
-.footer .inputs {
-    padding: 20px;
+.footer .container-footer .inputs {
+    padding: 10px 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
 
 }
-.footer .inputs .input-1{
+.footer .container-footer .inputs .input-1{
     margin: 20px 0;
-    /* display: flex;
-    flex-flow: column wrap; */
-    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
 }
-.footer .inputs .input-2{
+.footer .container-footer .inputs .input-2{
     margin: 20px 0;
-    /* display: flex;
-    flex-flow: column wrap; */
-    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
 }
-.footer .inputs  input{
+.footer .container-footer .inputs  input{
     margin: 10px 0;
     height: 40px;
-    width: 40%;
+    width: 95%;
     background: rgba(0, 0, 0, 0.12);
     border-radius: 6px;
     color: white;
@@ -249,7 +257,7 @@ position: relative;
     line-height: 2%;
 }
 .last-input {
-    padding: 20px;
+    padding:0 20px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -259,7 +267,7 @@ position: relative;
     
     margin: 20px;
     height: 40px;
-    width: 82%;
+    width: 97%;
     background: rgba(0, 0, 0, 0.12);
     border-radius: 6px;
     color: white;
