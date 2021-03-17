@@ -12,6 +12,7 @@ background: linear-gradient(116.47deg, #2559CD 9%, #1D4DC9 41%, #0F38C1 80%);
     display: flex;
     justify-content: space-around;
     flex-flow:wrap;
+    align-items: center;
 }
 .header .nav-bar ul {
     list-style: none;
@@ -27,41 +28,42 @@ font: italic bold 20px/2 'Dancing Script' ;
     margin-right: 20px;
 }
 .personal-info {
-
-    margin-top: 100px;
-    padding: 0px 20px;
-    padding-left: 100px;
+    padding-bottom: 100px;
+    margin: 20px;
     color: white;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
 }
-.personal-info .info-text {
-    margin-bottom: 100px;
+.personal-info .info-text h1{
+    font: normal bold 28px/33px Roboto;
 }
+.personal-info .info-text h2{
+    margin-bottom: 10px;
+    font: normal bold 36px/42px roboto;
+    }
 .personal-info .btn1 {
 color: white;
-height: 44px;
+width: 150px;
+height: 48px;
 margin: 30px 10px 30px 0;
-font-weight: bold;
-font-size: 20px;
-width: 120px;
-border-radius: 8px;
+font: normal 500 15px/19px roboto;
 border: 2px solid #e8e9ee;
-background-color: yellowgreen;
+background: linear-gradient(99.51deg, #FDD662 -14.8%, #FCA330 105.66%);
+border-radius: 8px;
 }
 .personal-info .btn2 {
-color: white;
-font-weight: bold;
-font-size: 20px;
-height: 44px;
-width: 120px;
+color: #FDBA46;
+font: normal 500 15px/19px roboto;
+width: 150px;
+height: 48px;
 border-radius: 8px;
 border: 2px solid #e8e9ee;
 background-color: #2559CD ;
 }
 .personal-info img {
-    WIDTH: 100px;
+    width: 100px;
+    margin-top: 67px;
 }
 .img-clouds{
     position: absolute;
@@ -190,7 +192,7 @@ border-radius: 6px;
 } */
 .client-1 .client-text 
 {
-    font: normal oblique 16px/1.5 'Times New Roman', Times, serif;;
+    font: normal oblique 16px/1.5 'Times New Roman', Times, serif;
     text-align: left;
 }
 .client-1 .name {
@@ -211,11 +213,14 @@ border-radius: 6px;
 }
 .footer {
     background: linear-gradient(116.47deg, #2559CD 9%, #1D4DC9 41%, #0F38C1 80%);
-    text-align: center;
-    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+
+    /* padding: 60px 0; */
 }
 .footer .container-footer {
-    padding: 0 80px;
+    width: 80%;
+    padding: 20px;
 }
 .footer h2 {
     color: white;
@@ -226,7 +231,7 @@ border-radius: 6px;
     font-weight: bold;
 }
 .footer .container-footer .inputs {
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -247,33 +252,37 @@ border-radius: 6px;
 }
 .footer .container-footer .inputs  input{
     margin: 10px 0;
+    padding-left: 10px;
     height: 40px;
     width: 95%;
     background: rgba(0, 0, 0, 0.12);
     border-radius: 6px;
     color: white;
-    font-weight: bold;
     letter-spacing: 1px;
     line-height: 2%;
+    border: none;
+}
+.footer .container-footer .inputs  :-ms-input-placeholder{
+    color: red;
 }
 .last-input {
-    padding:0 20px;
+    padding:10px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     flex-flow: column wrap;
 }
 .footer .input-help{
-    
-    margin: 20px;
     height: 40px;
-    width: 97%;
+    width: 98%;
+    font: normal normal 16px/2% normal;
+    padding-left: 10px;
+    margin-bottom: 15px;
     background: rgba(0, 0, 0, 0.12);
     border-radius: 6px;
     color: white;
-    font-weight: bold;
     letter-spacing: 1px;
-    line-height: 2%;
+    border: none;
     
 }
 .all-inputs {
@@ -286,17 +295,70 @@ border-radius: 6px;
 99.51deg
 , #FDD662 -14.8%, #FCA330 105.66%);
     border-radius: 8px;
-    margin-left: 18px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 34px;
-    text-align: center;
+    font: normal 500 18px/34px roboto;
     color: white;
 }
 .fonts i {
     color: white;
     margin: 10px;
     font-size: 30px;
+}
+@media (min-width: 320px) and (max-width: 479px){
+        .personal-info img {
+            width: 100px;
+            margin-top: 20px;
+        }
+        .personal-info .info-text h1 {
+            font: normal bold 19px/8px Roboto;
+        }
+        .personal-info .info-text h2 {
+            font: normal bold 27px/32px roboto
+        }
+        .header .nav-bar {
+            margin: auto 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-flow:column wrap;
+            align-items: center;
+        }
+        .header .nav-names ul {
+            list-style: none;
+            display: flex;
+            flex-flow:column wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .header .nav-bar ul li {
+            font: italic bold 16px/2 'Dancing Script' ;
+            }
+            .footer .container-footer {
+                width: 93%;
+                padding: 20px;
+            }
+            .footer .container-footer h2 {
+                font-size: 20px;
+            }
+            .footer .container-footer P {
+                font-size: 15px;
+            }
+            .footer .container-footer .inputs {
+                padding: 10px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-content: center;
+            }
+}
+@media (min-width: 320px) and (max-width: 479px){
+    .footer .container-footer {
+        padding:0px 10px;
+        width: 80%; 
+    }
+    .footer .container-footer .inputs .input-1 {
+        width: 100%;
+    }
+    .footer .container-footer .inputs .input-2 {
+        width: 100%;
+    }
+
 }
